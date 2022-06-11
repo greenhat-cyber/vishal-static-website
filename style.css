@@ -1,0 +1,35 @@
+
+.navbar-toggler.ml-auto{
+    border: none;
+} 
+
+:root{
+    --secondary: #1e847f;
+    --secondary-light:#c4a35a;
+    --three:#505050;
+}
+
+
+.navbar .navbar-nav .nav-link{
+    color:rgb(255, 0, 0);
+
+}
+.navbar .navbar-nav .nav-link::after{
+    content: "";
+    display: block;
+    background-color: var(--three);
+    height: 2px;
+    transform: scalex(0);
+    transition:transform 300ms;
+}
+.navbar .navbar-nav .nav-link:hover::after{
+    transform: scalex(1);
+}
+::selection{
+    color: var(--secondary-light);
+    background-color: var(--three);
+}
+
+.navbar-toggler.ml-auto{
+    outline-style: none;
+}
